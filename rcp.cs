@@ -11,7 +11,6 @@ namespace igra
             RandomNumberGenerator rng = new RNGCryptoServiceProvider();
             byte[] tokenData = new byte[32];
             rng.GetBytes(tokenData);
-            //string token = Convert.ToBase64String(tokenData);
             return (tokenData);
         }
     }
